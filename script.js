@@ -1,5 +1,9 @@
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert('Thank you for your message!');
-  this.reset();
+// Smooth scroll or interactivity placeholder
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 });
